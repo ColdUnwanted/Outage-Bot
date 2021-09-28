@@ -125,3 +125,6 @@ config.json
 
 # ignore eslint
 .eslintrc.json
+
+# ignore node modules
+node_modules/
