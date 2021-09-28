@@ -119,3 +119,6 @@ dist
 
 # ignore config
 config.json
+
+# ignore vscode
+.vscode
