@@ -1,5 +1,5 @@
 # Outage-Bot
-A open source Discord bot coded in JavaScript with [Discord.js](https://discord.js.org).\n
+A open source Discord bot coded in JavaScript with [Discord.js](https://discord.js.org).<br/>
 Services are monitor with either TCP ping, http request or IMCP ping.
 
 ## Installation
