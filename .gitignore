@@ -122,3 +122,6 @@ config.json
 
 # ignore vscode
 .vscode
+
+# ignore eslint
+.eslintrc.json
