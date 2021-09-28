@@ -1,0 +1,22 @@
+{
+	"ping": {
+		"description": "Check bot's ping",
+		"message": "Ping to websocket: **{websocket}**\nPing to API: **{api}**"
+	},
+	"monitor": {
+		"description": "Display a monitor showing the server status",
+		"loadingMessage": "Monitor loading, please wait.",
+        "alertFailed": "Alert could not be sent - Unable to find the channel with the given id: {id} Make sure the bot has permission to view the channel.",
+        "alertFailedPerm": "Alert could not be sent - Missing send permission for the channel with the given id: {id}.",
+        "mentionFailed": "Mention could not be sent - Unable to find the channel with the given id: {id} Make sure the bot has permission to view the channel.",
+        "mentionFailedPerm": "Mention could not be sent - Missing send permission for the channel with the given id: {id}."
+	},
+    "status": {
+		"description": "Display a status showing the server status",
+		"loadingMessage": "Status loading, please wait."
+	},
+    "uptime": {
+		"description": "Check bot's uptime",
+		"message": "Uptime: **{days}** day(s), **{hours}** hours, **{minutes}** minutes, **{seconds}** seconds"
+	}
+}

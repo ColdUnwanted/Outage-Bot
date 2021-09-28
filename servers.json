@@ -1,0 +1,39 @@
+   
+[
+    {
+        "name": "Google",
+        "type": "http",
+        "address": "google.com",
+        "hide_address": false
+    },
+    {
+        "name": "Cloudflare",
+        "type": "ping",
+        "address": "1.1.1.1",
+        "hide_address": false
+    },
+    {
+        "name": "Gmail SMTP",
+        "type": "tcp",
+        "address": "smtp.gmail.com:465",
+        "hide_address": false
+    },
+    {
+        "name": "Invalid ping",
+        "type": "ping",
+        "address": "10.10.10.10",
+        "hide_address": false
+    },
+    {
+        "name": "Invalid http",
+        "type": "http",
+        "address": "ialsodont.exist",
+        "hide_address": false
+    },
+    {
+        "name": "Invalid tcp",
+        "type": "tcp",
+        "address": "google.com:256",
+        "hide_address": true
+    }
+]

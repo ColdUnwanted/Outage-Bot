@@ -1,0 +1,16 @@
+{
+    "general": {
+        "token": "",
+        "prefix": ">",
+        "status": "your services",
+        "adminId": [
+            "255200176686366720"
+        ]
+    },
+    "monitor": {
+        "timeout": 1,
+        "alert_channel": "1234",
+        "mention_role": "1234",
+        "update_rate": 30
+    }
+}
