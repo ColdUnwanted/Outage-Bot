@@ -32,7 +32,7 @@ Rename `config_example.json` to `config.json` and edit the default value
 
 ## Server Configuration
 Servers should be setup similar to the examples already in `server.json`
-```
+```json
 [
     {
         "name": "DuckDuckGo",
