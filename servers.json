@@ -1,15 +1,15 @@
    
 [
     {
-        "name": "Google",
+        "name": "DuckDuckGo",
         "type": "http",
-        "address": "google.com",
+        "address": "duckduckgo.com",
         "hide_address": false
     },
     {
-        "name": "Cloudflare",
+        "name": "Google DNS",
         "type": "ping",
-        "address": "1.1.1.1",
+        "address": "8.8.8.8",
         "hide_address": false
     },
     {
@@ -27,7 +27,7 @@
     {
         "name": "Invalid http",
         "type": "http",
-        "address": "ialsodont.exist",
+        "address": "doyouwanttobuildasnowman.no",
         "hide_address": false
     },
     {
