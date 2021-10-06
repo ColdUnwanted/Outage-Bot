@@ -150,15 +150,11 @@ async function monitor(client, msg, already_alert = false) {
                 // No idea why this happens, by right this should never happen
                 is_down = true;
             }
-            else if (this_result.status == 'null') {
-                is_down = true;
-                reason = 'Site Does Not Exist';
-            }
             else if (this_result.status == 'rejected' && this_result.reason['code'] == 'ENOTFOUND') {
                 is_down = true;
                 reason = 'Site Does Not Exist';
             }
-            else if (this_result.status == 'rejected' && this_result.reason['response'].status == 403) {
+            else if (this_result.status == 'rejected' && this_result.reason['response'] == 403) {
                 is_down = true;
                 reason = 'Forbidden';
             }
