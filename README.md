@@ -10,7 +10,8 @@ Inspired by [discord-uptime](https://github.com/finlaysawyer/discord-uptime).
 3. Run `cd Outage-Bot` to move in the folder that Git has just created.
 4. Run `npm install` to download the node modules required.
 5. Rename `config_example.json` to `config.json` and edit it.
-6. Run the bot with `node bot.js`.
+6. Rename `data_example.json` to `data.json` if you want to have a clean data file.
+7. Run the bot with `node bot.js`.
 
 ### Windows
 1. Make sure you have installed [Node.js](https://www.guru99.com/download-install-node-js.html) v10 or higher and [Git](https://www.linode.com/docs/development/version-control/how-to-install-git-on-linux-mac-and-windows/).
@@ -18,7 +19,8 @@ Inspired by [discord-uptime](https://github.com/finlaysawyer/discord-uptime).
 3. Run `cd Outage-Bot` to move in the folder that Git has just created.
 4. Run `npm install` to download the node modules required.
 5. Rename `config_example.json` to `config.json` and edit it.
-6. Run the bot with `node bot.js`.
+6. Rename `data_example.json` to `data.json` if you want to have a clean data file.
+7. Run the bot with `node bot.js`.
 
 ### Bot Setup
 Rename `config_example.json` to `config.json` and edit the default value
