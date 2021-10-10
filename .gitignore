@@ -119,6 +119,8 @@ dist
 
 # ignore config
 config.json
+data.json
+servers.json
 
 # ignore vscode
 .vscode
