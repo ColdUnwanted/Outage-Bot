@@ -43,7 +43,7 @@ async function monitor(client, msg, already_alert = false) {
                 host: address,
                 port: port,
                 timeout: config.timeout * 1000,
-                attempts: 1,
+                attempts: 3,
             });
 
             all_promise.push(promise);
@@ -130,6 +130,7 @@ async function monitor(client, msg, already_alert = false) {
             if (this_result == null) {
                 // No idea why this happens, by right this should never happen
                 is_down = true;
+                reason = 'N/A';
             }
             else if (this_result.status == 'rejected') {
                 is_down = true;
@@ -142,6 +143,16 @@ async function monitor(client, msg, already_alert = false) {
             else if (this_result.value[0].ping == 1001) {
                 is_down = true;
                 reason = 'Port Not Open';
+            }
+
+            // Go through all 3 array to see whether there's actually 1 that got through the connection
+            if (this_result != null && this_result.status != 'rejected') {
+                this_result.value.forEach(result_ping => {
+                    if (result_ping.ping != null && result_ping.ping != 1001) {
+                        is_down = false;
+                        reason = '';
+                    }
+                });
             }
         }
         else if (this_server.type.toLowerCase() == 'http') {

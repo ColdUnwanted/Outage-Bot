@@ -37,7 +37,7 @@ async function status(client, user, msg) {
                 host: address,
                 port: port,
                 timeout: config.timeout * 1000,
-                attempts: 1,
+                attempts: 3,
             });
 
             all_promise.push(promise);
@@ -115,6 +115,15 @@ async function status(client, user, msg) {
             }
             else if (this_result.value[0].ping == 1001) {
                 is_down = true;
+            }
+
+            // Go through all 3 array to see whether there's actually 1 that got through the connection
+            if (this_result != null && this_result.status != 'rejected') {
+                this_result.value.forEach(result_ping => {
+                    if (result_ping.ping != null && result_ping.ping != 1001) {
+                        is_down = false;
+                    }
+                });
             }
         }
         else if (this_server.type.toLowerCase() == 'http') {
